@@ -1,17 +1,12 @@
 Hearthdeck.Router.map(function() {
   this.resource('decks', {path: '/'}, function() {
-    this.resource('deck', {path: '/:name'});
+    this.resource('deck', {path: '/:deck_id'});
   });
 })
 
 Hearthdeck.DecksRoute = Ember.Route.extend({
   model: function(params) {
-    return Hearthdeck.DECKS;
+    return this.store.findAll('deck');
   }
 });
 
-Hearthdeck.DeckRoute = Ember.Route.extend({
-  model: function(params) {
-    return Hearthdeck.DECKS.findby('name',params.name);
-  }
-});

@@ -14,7 +14,9 @@
 //= require jquery_ujs
 //= require handlebars.runtime
 //= require ember
+//= require ember-data
 //= require turbolinks
 //= require hearthdeck
+
 //= require_tree .
 
