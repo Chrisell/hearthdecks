@@ -1,8 +1,3 @@
-Hearthdeck.Deck = DS.Model.extend({
-  name: DS.attr('string'),
-  description: DS.attr('string')
-});
-
 Hearthdeck.Deck.FIXTURES = [
   {
     id: 1,
@@ -19,4 +14,4 @@ Hearthdeck.Deck.FIXTURES = [
     name: 'Anti-agro Pally',
     description: 'Heals and taunt cards can keep you alive till you beat your opponent once the agro wears off.'
   }
-];
+]
