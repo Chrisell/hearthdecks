@@ -1,0 +1,7 @@
+.left-area
+  h2 Deck List
+  ul = each
+    li
+      link-to this.name 'deck' this
+.right-area
+  outlet
