@@ -16,7 +16,12 @@
 //= require ember
 //= require ember-data
 //= require turbolinks
+//= require_self
 //= require hearthdeck
+Hearthdeck = Ember.Application.create();
 
-//= require_tree .
+Hearthdeck.Store = DS.Store.extend({
+  adapter: DS.FixtureAdapter
+});
+
 
