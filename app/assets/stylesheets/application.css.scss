@@ -19,6 +19,10 @@
 
 body {
   @include outer-container;
+  font-family: Helvetica, Arial, sans-serif;
+  .class_avatar {
+    border-radius:29px;
+  }
 }
 .left-area {
   @include span-columns(3);

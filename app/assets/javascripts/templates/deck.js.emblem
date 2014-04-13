@@ -1,2 +1,4 @@
 h2 = name
+img.class_avatar src=character.image
+p = character.title
 p = description

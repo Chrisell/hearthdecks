@@ -3,5 +3,8 @@
   ul = each
     li
       link-to this.name 'deck' this
+  Ember.TextField valueBinding="name"
+  button click='newDeck' Create New Deck 
+  button click='changeSort' Change Sort
 .right-area
   outlet

@@ -1,3 +1,3 @@
 Hearthdeck.Store = DS.Store.extend(
-  adapter: "DS.FixtureAdapter"
+  adapter: "DS.RESTAdapter"
 )
