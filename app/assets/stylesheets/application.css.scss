@@ -10,16 +10,60 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
  */
 
 @import 'bourbon';
 @import 'neat';
+@import 'bitters/bitters';
+
+$orange: #FF931A;
+$blue: #54BEFF;
+$white: #ffffff;
+
+.accent_font {
+  font-family: 'Exo', sans-serif;
+}
+
+@mixin box-shadow($shadows...) {
+  -moz-box-shadow: $shadows;
+  -webkit-box-shadow: $shadows;
+  box-shadow: $shadows;
+}
+
+.shadows {
+  @include box-shadow(0px 4px 5px #666, 2px 6px 10px #999);
+}
 
 body {
-  @include outer-container;
-  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  h1,h2,h3,h4,h5 {
+    @extend .accent_font;
+  }
+  section.header {
+    background-color: #000000;
+    width: 100%;
+    color: $white;
+    margin: 0 0 2em 0;
+    padding: 1em 0;
+    .inner{
+      @include outer-container;
+      h1,.muted {
+        float:left;
+      }
+      h1 {
+        font-weight: 200;
+        text-shadow: 0px 2px 2px #af5422;
+      }
+      .muted{
+        @extend .accent_font;
+        margin: 1em 0 0 1em;
+      }
+    }
+  }
+  section.main{
+    @include outer-container;
+  }
   .class_avatar {
     border-radius:29px;
   }
@@ -30,4 +74,30 @@ body {
 .right-area{
   @include span-columns(9);
   @include omega();
+}
+.deck {
+  .cards {
+    list-style: none;
+    .card {
+      display:block;
+      margin-bottom: 0.5em;
+      clear: both;
+      .mana_cost, .card_title {
+        float: left;
+      }
+      .card_title{
+        font-weight: 400;
+      }
+      .mana_cost {
+        padding: 0 0.5em;
+        margin-right:1em;
+        background: $blue;
+        width: 25px;
+        height: 25px;
+        border-radius: 12px;
+        color: $white;
+        font-weight: 400;
+      }
+    }
+  }
 }

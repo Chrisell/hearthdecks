@@ -1,3 +1,6 @@
-h1 Hearthdeck
-p.muted A Hearthstone deck manager.
-outlet
+section.header
+  .inner
+    h1 Hearthdeck
+    p.muted A Hearthstone deck manager.
+section.main
+  outlet

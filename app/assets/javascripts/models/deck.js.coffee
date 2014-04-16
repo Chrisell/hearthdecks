@@ -1,5 +1,6 @@
 Hearthdeck.Deck = DS.Model.extend(
   name: DS.attr('string'),
   description: DS.attr('string'),
-  character: DS.belongsTo('character')
+  cards: DS.hasMany('card', { async: true }),
+  character: DS.belongsTo('character', { async: true })
 )

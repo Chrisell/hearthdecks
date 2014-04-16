@@ -1,0 +1,4 @@
+h3 = name
+h4 Decks
+each decks
+  link-to name 'deck' this

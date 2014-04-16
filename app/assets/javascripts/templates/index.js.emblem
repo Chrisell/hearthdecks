@@ -1,6 +1,6 @@
 .left-area
   h3 Deck List
-  ul = each
+  ul = each decks
     li
       link-to this.name 'deck' this
   Ember.TextField valueBinding="new_name"

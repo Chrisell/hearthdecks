@@ -1,4 +1,12 @@
-h2 = name
-img.class_avatar src=character.image
-p = character.title
-p = description
+.deck
+  h2 = name
+  img.class_avatar src=class_avatar
+  p = character.name
+  p = description
+  h4 Card List
+  ul.cards
+    each cards
+      li.card
+        span.mana_cost = cost
+        link-to title 'card' this
+        .clear

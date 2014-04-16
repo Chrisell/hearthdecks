@@ -9,6 +9,7 @@ Hearthdeck.Deck.FIXTURES = [
     id: 2,
     name: 'Agro Rogue',
     description: 'Low mana cost units and high use of combo cards keeps agression going right from the start.',
+    cards: [601,602],
     character: 2
   },
   {
@@ -19,14 +20,19 @@ Hearthdeck.Deck.FIXTURES = [
   }
 ]
 
+Hearthdeck.Card.FIXTURES = [
+  { id: 601, title: 'SI:7 Agent', cost: 3, effect: 'combo' },
+  { id: 602, title: 'Cold Blood', cost: 1, effect: 'combo' }
+]
+
 Hearthdeck.Character.FIXTURES = [
-  { id: 1, title: 'Priest', image: 'assets/classes/priest.jpg' },
-  { id: 2, title: 'Rogue', image: 'assets/classes/rogue.jpg' },
-  { id: 3, title: 'Warror', image: 'assets/classes/warrior.jpg' },
-  { id: 4, title: 'Shaman', image: 'assets/classes/shaman.jpg' },
-  { id: 5, title: 'Warlock', image: 'assets/classes/warlock.jpg' },
-  { id: 6, title: 'Hunter', image: 'assets/classes/hunter.jpg' },
-  { id: 7, title: 'Mage', image: 'assets/classes/mage.jpg'},
-  { id: 8, title: 'Paladin', image: 'assets/classes/paladin.jpg' },
-  { id: 9, title: 'Druid', image: 'assets/classes/druid.jpg' }
+  { id: 1, name: 'Priest', decks: [1] },
+  { id: 2, name: 'Rogue' },
+  { id: 3, name: 'Warror' },
+  { id: 4, name: 'Shaman' },
+  { id: 5, name: 'Warlock' },
+  { id: 6, name: 'Hunter' },
+  { id: 7, name: 'Mage' },
+  { id: 8, name: 'Paladin' },
+  { id: 9, name: 'Druid' }
 ]
