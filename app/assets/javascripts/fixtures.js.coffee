@@ -27,12 +27,12 @@ Hearthdeck.Card.FIXTURES = [
 
 Hearthdeck.Character.FIXTURES = [
   { id: 1, name: 'Priest', decks: [1] },
-  { id: 2, name: 'Rogue' },
+  { id: 2, name: 'Rogue', decks: [2] },
   { id: 3, name: 'Warror' },
   { id: 4, name: 'Shaman' },
   { id: 5, name: 'Warlock' },
   { id: 6, name: 'Hunter' },
   { id: 7, name: 'Mage' },
-  { id: 8, name: 'Paladin' },
+  { id: 8, name: 'Paladin', decks: [3] },
   { id: 9, name: 'Druid' }
 ]
